@@ -7,7 +7,7 @@ theme = "material"
 paginate = 7
 relativeurls = true
 publishDir = "docs"
-ignoreFiles = ["_files$", "_cache$"]
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"] 
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
