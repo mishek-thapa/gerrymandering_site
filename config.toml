@@ -1,0 +1,53 @@
+baseurl = "https://dreamy-wozniak-f95800.netlify.com/"
+languageCode = "en-us"
+title = "Gerrymandering"
+theme = "material"
+#googleAnalytics = ""
+#disqusShortname = ""
+paginate = 7
+relativeurls = true
+publishDir = "docs"
+ignoreFiles = ["_files$", "_cache$"]
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+    
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  archive = "archives"
+
+# Menu Configuration
+[[menu.main]]
+  weight = 1
+  identifier = "home"
+  name = "Home"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
+  url = "/"
+[[menu.main]]
+  weight = 2
+  identifier = "history"
+  name = "About"
+  pre = "<i class=\"material-icons\">date_range</i>"
+  url = "/history"
+[[menu.main]]
+  weight = 3
+  identifier = "current_events"
+  name = "Current Events"
+  pre = "<i class=\"material-icons\">gavel</i>"
+  url = "/current_events"
+[[menu.main]]
+  weight = 4
+  identifier = "projects"
+  name = "Projects"
+  pre = "<i class=\"material-icons\">cloud_queue</i>"
+  url = "/projects"
+  
+
+[params]
+    description = "A website built through Hugo and blogdown."
+    
+    background = "https://ballpitmag.files.wordpress.com/2017/09/gerrymandering.jpg"
+
+
+
